@@ -1,4 +1,8 @@
 import { Grid, Typography } from "@mui/material";
+import sdei_experience from "../text_blobs/sdei_experience";
+import caiei_experience from "../text_blobs/caiei_experience";
+import csec_experience from "../text_blobs/csec_experience";
+import college_experience from "../text_blobs/college_experience";
 import ExperienceCard from "../components/ExperienceCard";
 
 
@@ -12,35 +16,35 @@ export default function Experience(){
                     title={"Software Engineer I"}
                     setting={"LivePerson"}
                     timeframe={"February 2021 - October 2022"}
-                    description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."}>
-                    
+                    keywords={["Front End", "Back End", "Full Stack", "React", "GCP", "Python", "Web Dev", "AI", "NLP"]}
+                    description={sdei_experience}>                    
                     </ExperienceCard>
                 </Grid>
                 <Grid item>
                     <ExperienceCard
                     title={"Conversational AI Engineer Intern"}
                     setting={"LivePerson"}
-                    timeframe={"February 2021 - October 2022"}
-                    description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."}>
-                    
+                    timeframe={"July 2020 - January 2021"}
+                    keywords={["Front End", "React", "Python", "Web Dev", "AI", "NLP"]}
+                    description={caiei_experience}>
                     </ExperienceCard>
                 </Grid>
                 <Grid item>
                     <ExperienceCard
                     title={"Cybersecurity Research Assistant"}
                     setting={"Rochester Institute of Technology Center for Cybersecurity"}
-                    timeframe={"February 2021 - October 2022"}
-                    description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."}>
-                    
+                    timeframe={"October 2019 - March 2020"}
+                    keywords={["Front End", "Back End", "Full Stack", "React", "GCP", "Python", "Web Dev", "AI", "NLP"]}
+                    description={csec_experience}>                    
                     </ExperienceCard>
                 </Grid>
                 <Grid item>
                     <ExperienceCard
                     title={"Bachelor's of Science"}
                     setting={"Rochester Institute of Technology"}
-                    timeframe={"February 2021 - October 2022"}
-                    description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."}>
-                    
+                    timeframe={"2017 - 2021"}
+                    keywords={["Front End", "Back End", "Full Stack", "React", "GCP", "Python", "Web Dev", "AI", "NLP"]}
+                    description={college_experience}>                    
                     </ExperienceCard>
                 </Grid>
             </Grid>
