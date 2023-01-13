@@ -34,7 +34,7 @@ export default function Experience(){
                     title={"Cybersecurity Research Assistant"}
                     setting={"Rochester Institute of Technology Center for Cybersecurity"}
                     timeframe={"October 2019 - March 2020"}
-                    keywords={["Front End", "Back End", "Full Stack", "React", "GCP", "Python", "Web Dev", "AI", "NLP"]}
+                    keywords={["Cybersecurity", "Back End", "Tensorflow", "Python", "AI"]}
                     description={csec_experience}>                    
                     </ExperienceCard>
                 </Grid>
@@ -43,7 +43,7 @@ export default function Experience(){
                     title={"Bachelor's of Science"}
                     setting={"Rochester Institute of Technology"}
                     timeframe={"2017 - 2021"}
-                    keywords={["Front End", "Back End", "Full Stack", "React", "GCP", "Python", "Web Dev", "AI", "NLP"]}
+                    keywords={[]}
                     description={college_experience}>                    
                     </ExperienceCard>
                 </Grid>

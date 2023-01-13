@@ -1,4 +1,6 @@
 import { Box, Typography, Button, Grid } from "@mui/material";
+import { useWindowSize } from "@react-hook/window-size";
+
 
 function Feature(props){
     return(
@@ -30,13 +32,14 @@ function Keyword(props){
 }
 
 export default function ExperienceCard(props){
+    const [width, height] = useWindowSize();
     return(
         <div>
-            <Box sx={{width: '60vw', marginBottom: 8, backgroundColor: '#1e1e1e', padding: 6, borderRadius: '10px'}}>
+            <Box sx={{width: width >= 1000 ?'60vw':'80vw', marginBottom: 8, backgroundColor: '#1e1e1e', padding: 6, borderRadius: '10px'}}>
                 <Typography variant="h4">{props.title}</Typography>
                 <Typography variant="h5" sx={{marginBottom: 1}}>{props.setting}, {props.timeframe}</Typography>
                 <Grid container justifyContent="flex-start" sx={{marginTop: 1, marginBottom: 1}}>
-                    {props.keywords.map(word => {
+                    {width >= 1000 && props.keywords.map(word => {
                         return(
                             <Grid item>
                                 <Keyword>{word}</Keyword>
