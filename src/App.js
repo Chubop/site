@@ -43,7 +43,7 @@ function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
-      <div style={{padding: '36px'}}>
+      <div style={{padding: '36px', marginBottom: '400px', marginTop: '48px'}}>
         <NavBar/>
         <div className="body">
           <Routes>

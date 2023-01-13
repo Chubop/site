@@ -6,11 +6,13 @@ import Typography from '@mui/material/Typography';
 import Icon from '@mui/material/Icon';
 import IconButton from '@mui/material/IconButton';
 
+
 import LinkedInSVG from '../svgs/linkedin_svg.svg';
 import DropdownArrow from '../svgs/dropdown_arrow.svg';
 import Resume from '../svgs/resume.svg';
 
 import { Grid, Menu, MenuItem } from '@mui/material';
+import { Link, useLocation } from 'react-router-dom';
 
 
 
@@ -28,10 +30,12 @@ export default function NavBar() {
         setAnchorEl(null);
     };
 
+    const location = useLocation();
+
 
     return (
     <div style={{backgroundColor: '#121212'}}>
-
+        
         <Menu
             id="basic-menu"
             anchorEl={anchorEl}
@@ -41,14 +45,23 @@ export default function NavBar() {
             'aria-labelledby': 'basic-button',
             }}
         >
-            <MenuItem onClick={handleClose}>Experience</MenuItem>
-            <MenuItem onClick={handleClose}>Projects</MenuItem>
-            <MenuItem onClick={handleClose}>Blog</MenuItem>
+            <Link to="/" style={{ textDecoration: 'none', color: '#fff' }}>
+                <MenuItem sx={{fontSize: '1.33em'}} onClick={handleClose}>Home</MenuItem>
+            </Link>
+            <Link to="/experience" style={{ textDecoration: 'none', color: '#fff' }}>
+                <MenuItem sx={{fontSize: '1.33em'}} onClick={handleClose}>Experience</MenuItem>
+            </Link>
+            <Link to="/projects" style={{ textDecoration: 'none', color: '#fff' }}>
+                <MenuItem sx={{fontSize: '1.33em'}} onClick={handleClose}>Projects</MenuItem>
+            </Link>
+            <Link to="/blog" style={{ textDecoration: 'none', color: '#fff' }}>
+                <MenuItem sx={{fontSize: '1.33em'}} onClick={handleClose}>Blog</MenuItem>
+            </Link>        
         </Menu>
 
 
         <Box sx={{ flexGrow: 1, backgroundColor: '#121212' }}>
-            <AppBar position="static" 
+            <AppBar position="fixed" 
             elevation={0}
             sx={{
             }}>
@@ -62,11 +75,11 @@ export default function NavBar() {
                     <Grid item onClick={handleClick} sx={{cursor: 'pointer'}}>
                         <Grid container direction="row" justifyContent="flex-start" alignItems="center">
                             <Grid item>
-                                <Typography variant="h5" component="div" sx={{ flexGrow: 1, fontWeight: 'light' }}>
+                                <Typography variant="h5" component="div" sx={{ flexGrow: 1, fontWeight: 'light', marginLeft: 2 }}>
                                     Sam Kirby
                                 </Typography>
                             </Grid>
-                            <Grid item sx={{p: 1}}>
+                            <Grid item sx={{p: 1, flexGrow: 1}}>
                                 <Icon>
                                     <img src={DropdownArrow}/>
                                 </Icon>
