@@ -1,0 +1,9 @@
+.body{
+  font-family: "colfax-web";
+}
+
+.butt:hover {
+  /* to black */
+  filter: brightness(150%);
+  transition: all 5 ease;
+}
