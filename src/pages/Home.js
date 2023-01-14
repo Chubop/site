@@ -1,5 +1,5 @@
 import { Grid, Typography } from "@mui/material";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Lottie from "react-lottie";
 import Content from "../components/Content";
 import {
@@ -8,12 +8,33 @@ import {
 import * as animationData from "../lotties/computer.json";
 import ImageCard from "../components/ImageCard";
 import { Link } from "react-router-dom";
+import { useStopwatch } from "react-timer-hook";
 
 
 export default function Home(props){
 
+    const {
+        seconds,
+        minutes,
+        hours,
+        days,
+        isRunning,
+        start,
+        pause,
+        reset,
+      } = useStopwatch({ autoStart: true });
+
+
     const funnyExpressions = ["Usually", "Most of The Time", "Barely", "Assuming Enough Coffee",
     "Except on Fridays", "Now With No Cheat Sheet"]
+
+    const [currExp, setCurrExp] = useState(Math.floor(Math.random() * funnyExpressions.length)); 
+
+    useEffect(() => {
+        if(seconds % 10 === 0){
+            setCurrExp(Math.floor(Math.random() * funnyExpressions))
+        }
+    }, [seconds])
 
     const defaultOptions = {
         loop: true,
@@ -24,7 +45,6 @@ export default function Home(props){
         }
     };
 
-    const [currExp, setCurrExp] = useState(Math.floor(Math.random() * funnyExpressions.length)); 
     const [width, height] = useWindowSize();
 
     return(
