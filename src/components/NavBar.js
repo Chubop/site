@@ -60,7 +60,7 @@ export default function NavBar() {
         </Menu>
 
 
-        <Box sx={{ flexGrow: 1, backgroundColor: '#121212' }}>
+        <Box sx={{ flexGrow: 1, backgroundImage: "linear-gradient(to right, #121212, rgba(0,0,0,0))" }}>
             <AppBar position="fixed" 
             elevation={0}
             sx={{
