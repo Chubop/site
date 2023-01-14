@@ -35,7 +35,7 @@ export default function ExperienceCard(props){
     const [width, height] = useWindowSize();
     return(
         <div>
-            <Box sx={{width: width >= 1000 ?'60vw':'80vw', marginBottom: 8, backgroundColor: '#1e1e1e', padding: 6, borderRadius: '10px'}}>
+            <Box sx={{width: width >= 1000 ?'60vw':'80vw', marginBottom: 8, backgroundImage: "linear-gradient(to bottom, #1e1e1e, #171717)", padding: 6, borderRadius: '10px'}}>
                 <Typography variant="h4">{props.title}</Typography>
                 <Typography variant="h5" sx={{marginBottom: 1}}>{props.setting}, {props.timeframe}</Typography>
                 <Grid container justifyContent="flex-start" sx={{marginTop: 1, marginBottom: 1}}>
