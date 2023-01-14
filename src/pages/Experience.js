@@ -40,10 +40,19 @@ export default function Experience(){
                 </Grid>
                 <Grid item>
                     <ExperienceCard
+                    title={"Board Member, Publicist"}
+                    setting={"RIT AI Club"}
+                    timeframe={"2018 - 2020"}
+                    keywords={['Computer Science', "AI", "Public Speaking", "Presentations"]}
+                    description={"As the Publicist and Board Member of RIT's AI Club, I would make regular presentations to fellow students explaining complicated AI topics in a careful and simple way, to make AI more digestible for younger or less experienced students. Alongside the founding members, I aided in bringing the AI Club out of its infancy."}>                    
+                    </ExperienceCard>
+                </Grid>
+                <Grid item>
+                    <ExperienceCard
                     title={"Bachelor's of Science"}
                     setting={"Rochester Institute of Technology"}
                     timeframe={"2017 - 2021"}
-                    keywords={[]}
+                    keywords={['Computer Science']}
                     description={college_experience}>                    
                     </ExperienceCard>
                 </Grid>
