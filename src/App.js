@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import './fonts.css';
 
-
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import NavBar from './components/NavBar';

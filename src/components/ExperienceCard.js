@@ -21,7 +21,9 @@ function Keyword(props){
                 padding: 0,
                 paddingLeft: 2,
                 paddingRight: 2,
-                marginRight: 3
+                marginRight: 3,
+                marginBottom: 1,
+                marginTop: 1
             }}>
                 <Typography variant="h7">
                     {props.children}
