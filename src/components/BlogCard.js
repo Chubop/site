@@ -10,9 +10,9 @@ export default function BlogCard(props){
     return(
         <>
             <Box sx={{width: width < 1300 ? '80vw' : '50vw', paddingBottom: 1, marginBottom: 8, backgroundImage: "linear-gradient(to bottom, #1e1e1e, #171717)", borderRadius: '10px'}}>
-                <ProjectImage src={props.src}/>
-                <Box sx={{padding: 1}}>
-                <Typography variant="h7" sx={{color: 'gray'}}>
+                <ProjectImage src={props.src} href={props.href}/>
+                <Box sx={{padding: 4}}>
+                    <Typography variant="h7" sx={{color: 'gray'}}>
                         {props.date}
                     </Typography>
                     <Typography variant="h3" sx={{paddingBottom: 0}}>
