@@ -1,6 +1,6 @@
 import { Box, colors, Typography } from "@mui/material"
 import { useWindowSize } from "@react-hook/window-size";
-import ProjectImage from "./ProjectImage"
+import ProjectImage from "./CardImage"
 
 
 export default function ProjectCard(props){

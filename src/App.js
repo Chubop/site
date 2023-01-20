@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import { Route, Routes } from 'react-router-dom';
 import Experience from './pages/Experience';
 import Projects from './pages/Projects';
+import Blog from './pages/Blog';
 
 const darkTheme = createTheme({
   components:{
@@ -49,6 +50,7 @@ function App() {
             <Route path="/" element={<Home/>} />
             <Route path="/experience" element={<Experience/>} />
             <Route path="/projects" element={<Projects/>} />
+            <Route path="/blog" element={<Blog/>} />
           </Routes>
         </div>
       </div>
