@@ -75,7 +75,7 @@ export default function NavBar() {
                     <Grid item onClick={handleClick} sx={{cursor: 'pointer'}}>
                         <Grid container direction="row" justifyContent="flex-start" alignItems="center">
                             <Grid item>
-                                <Typography variant="h5" component="div" sx={{ flexGrow: 1, fontWeight: 'light', marginLeft: 2 }}>
+                                <Typography variant="h5" component="div" sx={{ flexGrow: 1, marginLeft: 2 }}>
                                     Sam Kirby
                                 </Typography>
                             </Grid>
@@ -90,7 +90,7 @@ export default function NavBar() {
                     <Grid item>
                         <Grid container direction="row" justifyContent="flex-end" alignItems="center">
                             <Grid item className="butt">
-                                <IconButton disableRipple>
+                                <IconButton disableRipple href="/Resume_SamKirby.pdf">
                                     <Icon sx={{width: 20, height: 25}}>
                                         <img src={Resume}/>
                                     </Icon>

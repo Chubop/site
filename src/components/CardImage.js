@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import { makeStyles } from "@mui/styles";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
     image: {
@@ -26,9 +27,11 @@ export default function ProjectImage(props){
 
     return(
         <Box className={classes.box}>
-            <img 
-            className={classes.image}
-            src={props.src}/>
+            <Link to={props.href} style={{width: 'inherit', cursor: props.href ? 'pointer' : 'default'}}>
+                <img 
+                className={classes.image}
+                src={props.src}/>
+            </Link>
         </Box>
 
     )
