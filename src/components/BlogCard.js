@@ -15,7 +15,7 @@ export default function BlogCard(props){
                     <Typography variant="h7" sx={{color: 'gray'}}>
                         {props.date}
                     </Typography>
-                    <Typography variant="h3" sx={{paddingBottom: 0}}>
+                    <Typography variant={width >= 1000 ? 'h4' : 'h5'} sx={{paddingBottom: 0}}>
                         {props.title}
                     </Typography>
 

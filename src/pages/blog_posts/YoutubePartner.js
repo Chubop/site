@@ -1,7 +1,7 @@
-import BlogContent from "./BlogContent"
-import BlogTitle from "./BlogTitle"
-import Paragraph from "./Paragraph"
-import BannerImage from "./BannerImage";
+import BlogContent from "../../components/blog/BlogContent"
+import BlogTitle from "../../components/blog/BlogTitle"
+import Paragraph from "../../components/blog/Paragraph"
+import BannerImage from "../../components/blog/BannerImage";
 import openai from '../../images/youtube.jpg';
 import partnerReqs from '../../images/youtube-partner-requirements.png';
 

@@ -1,9 +1,8 @@
-import BlogTitle from "./BlogTitle";
-import Paragraph from "./Paragraph";
 import desperation_winners from '../../images/desperation_winners.png';
-import BannerImage from "./BannerImage";
-import BlogContent from "./BlogContent";
- 
+import BlogTitle from "../../components/blog/BlogTitle"
+import BlogContent from "../../components/blog/BlogContent"
+import Paragraph from "../../components/blog/Paragraph"
+import BannerImage from "../../components/blog/BannerImage";
 
 
 export default function ExploringMinecraftDesperation(props){

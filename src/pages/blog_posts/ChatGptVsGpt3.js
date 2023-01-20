@@ -1,8 +1,8 @@
-import BlogContent from "./BlogContent"
-import BlogTitle from "./BlogTitle"
-import Paragraph from "./Paragraph"
+import BlogTitle from "../../components/blog/BlogTitle"
+import BlogContent from "../../components/blog/BlogContent"
+import Paragraph from "../../components/blog/Paragraph"
 import openai from '../../images/openai.png';
-import BannerImage from "./BannerImage";
+import BannerImage from "../../components/blog/BannerImage";
 
 export default function ChatGptVsGpt3(props){
 
