@@ -29,7 +29,7 @@ export default function Home(props){
 
     return(
         <Content>
-            <Grid container justifyContent="space-evenly" alignItems="center">
+            <Grid container justifyContent="space-evenly" alignItems="center" sx={{padding: 4}}>
                 <Grid item>
                     <Typography variant="h2" sx={{fontWeight: 'bold'}}>
                     Passing the Turing Test<br></br>
@@ -43,23 +43,22 @@ export default function Home(props){
 
                 <Grid item>
                     <Lottie options={defaultOptions}
-                    height={width >= 600 ? 600 : 400}
-                    width={width >= 600 ? 600 : 400}/>
+                    width={width >= 600 ? 600 : '90vw'}/>
                 </Grid>
             </Grid>
 
             <Grid container direction={width >= 900 ? 'row' : 'column'} justifyContent={"space-between"} alignItems={"center"} sx={{marginTop: 8}} >
-                <Grid item xs={3} sx={{textAlign: 'center'}} component={"div"} sx={{margin: 'auto'}}>
+                <Grid item xs={3} sx={{textAlign: 'center', margin: 'auto'}} component={"div"}>
                     <Link to="/experience" style={{ textDecoration: 'none' }}>
                         <ImageCard title={"Experience"} />
                     </Link>
                 </Grid>
-                <Grid item xs={3} sx={{textAlign: 'center'}} component={"div"} sx={{margin: 'auto'}}>
+                <Grid item xs={3} sx={{textAlign: 'center', margin: 'auto'}} component={"div"}>
                     <Link to="/projects" style={{ textDecoration: 'none' }}>
                         <ImageCard title={"Projects"} />
                     </Link>
                 </Grid>
-                <Grid item xs={3} sx={{textAlign: 'center'}} component={"div"} sx={{margin: 'auto'}}>
+                <Grid item xs={3} sx={{textAlign: 'center', margin: 'auto'}} component={"div"}>
                     <Link to="/blog" style={{ textDecoration: 'none' }}>
                         <ImageCard title={"Blog"} />
                     </Link>
