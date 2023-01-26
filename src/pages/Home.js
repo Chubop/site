@@ -5,9 +5,10 @@ import Content from "../components/Content";
 import {
     useWindowSize,
 } from '@react-hook/window-size';
-import * as animationData from "../lotties/computer.json";
+import * as animationData from "../lotties/space_computer.json";
 import ImageCard from "../components/ImageCard";
 import { Link } from "react-router-dom";
+import StarParallax from "../components/StarParallax";
 
 
 export default function Home(props){
@@ -31,7 +32,7 @@ export default function Home(props){
         <Content>
             <Grid container justifyContent="space-evenly" alignItems="center" sx={{padding: 4}}>
                 <Grid item>
-                    <Typography variant="h2" sx={{fontWeight: 'bold'}}>
+                    <Typography variant={"h2"} sx={{fontWeight: 'bold', textAlign: width >= 600 ? 'left' : 'center'}}>
                     Passing the Turing Test<br></br>
                         <Typography variant="h2" 
                         component={"span"} 

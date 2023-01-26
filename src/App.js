@@ -11,6 +11,7 @@ import Experience from './pages/Experience';
 import Projects from './pages/Projects';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
+import StarParallax from './components/StarParallax';
 
 const darkTheme = createTheme({
   components:{
@@ -46,6 +47,9 @@ function App() {
       <CssBaseline />
       <div style={{paddingTop: '36px', marginBottom: '400px', marginTop: '48px'}}>
         <NavBar/>
+        <div>
+          <StarParallax/>
+        </div>
         <div className="body">
           <Routes>
             <Route path="/" element={<Home/>} />
