@@ -14,7 +14,7 @@ function Box(props) {
   const [hovered, setHover] = useState(false)
   const [active, setActive] = useState(false)
   // Subscribe this component to the render-loop, rotate the mesh every frame
-  useFrame((state, delta) => (mesh.current.rotation.z += delta * 0.01))
+  useFrame((state, delta) => (mesh.current.rotation.z += delta * 0.015))
   // Return view, these are regular three.js elements expressed in JSX
   return (
     <mesh
