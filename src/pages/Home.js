@@ -43,7 +43,9 @@ export default function Home(props){
                 </Grid>
 
                 <Grid item>
-                    <Lottie options={defaultOptions}
+                    <Lottie 
+                    isClickToPauseDisabled
+                    options={defaultOptions}
                     width={width >= 600 ? 600 : '90vw'}/>
                 </Grid>
             </Grid>
