@@ -1,5 +1,6 @@
 import { Box, Typography, Button, Grid } from "@mui/material";
 import { useWindowSize } from "@react-hook/window-size";
+import ExampleCard from "./experience/ExampleCard";
 
 
 function Feature(props){
@@ -50,9 +51,9 @@ export default function ExperienceCard(props){
                     })}
                 </Grid>
                 <Typography variant="h6">{props.description}</Typography>
+                {props.children}
             </Box>
             <Box>
-                {props.children}
             </Box>
         </div>
     )
