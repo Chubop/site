@@ -15,7 +15,7 @@ export default function Experience(){
                     <ExperienceCard
                     title={"Software Engineer I"}
                     setting={"LivePerson"}
-                    timeframe={"February 2021 - October 2022"}
+                    timeframe={"February 2021"}
                     keywords={["Front End", "Back End", "Full Stack", "React", "GCP", "Python", "Web Dev", "AI", "NLP"]}
                     description={sdei_experience}>                    
                     </ExperienceCard>
