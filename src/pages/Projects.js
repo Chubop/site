@@ -10,6 +10,8 @@ import ctr from '../images/crash_team_racing_minecraft_mod.jpeg';
 import ctr_decompile from '../images/ctr_decompile.webp';
 import resume_ai from '../images/resume_ai.png';
 import smart_apply from '../images/smart_apply.png';
+import rnn from '../images/rnn.jpeg';
+import mnist from '../images/mnist.webp';
 
 export default function Projects(props){
     return(
@@ -32,7 +34,7 @@ export default function Projects(props){
                         By pulling from the YouTube and Discord APIs, I am able to calculate 
                         the total member count of my community, which is currently
                         <span> </span>
-                        <span style={{fontFamily: 'Courier', color: 'red', backgroundColor: '#292929', padding: 2, paddingLeft: 12, paddingRight: 12, borderRadius: 4}}>8,910</span>
+                        <span style={{fontFamily: 'Courier', color: 'red', backgroundColor: '#292929', padding: 2, paddingLeft: 12, paddingRight: 12, borderRadius: 4}}>9,013</span>
                         .
                     </div>
                     </ProjectCard>
@@ -59,6 +61,36 @@ export default function Projects(props){
                             
                         </ProjectCard>
                     </Grid>
+
+                    <Grid item>
+                        <ProjectCard 
+                        title={'AI-Generated Game of Thrones Chapter using Recurrent Neural Network'}
+                        src={rnn}>
+                            In 2019, I programmed an AI model using something called
+                            a recurrent neural network using Google's Tensorflow ML library. 
+                            At the time, LSTMs and transformers
+                            did not exist yet, so RNNs were the king of predictive text modeling.
+                            The chapter it generated was surprisingly good. You can find a link to the chapter
+                            <a href="https://docs.google.com/document/d/1gaCt4jYrbTDAKx2KsVQ2TO1tT4aKmaodHzC8daa-DOI/edit?usp=sharing"
+                            style={{color: 'white', marginLeft: 5}}>here.</a>
+                        </ProjectCard>
+                    </Grid>
+
+                    <Grid item>
+                        <ProjectCard 
+                        title={'GrowingGAN Implementation on NMIST Dataset'}
+                        src={mnist}>
+                            As part of my work as a Research Assistant under
+                            Professor Matthew Wright at RIT, I implemented nVidia's
+                            GrowingGAN model, and used it on
+                            the popular NMIST dataset successfully. You can read 
+                            nVidia's excerpt on their GrowingGAN publication
+                            <a style={{color: 'white', marginLeft: 5}} href="https://research.nvidia.com/publication/2018-04_progressive-growing-gans-improved-quality-stability-and-variation">
+                                here.
+                            </a>
+                        </ProjectCard>
+                    </Grid>
+
 
                     <Grid item>
                         <ProjectCard 
