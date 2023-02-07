@@ -4,6 +4,7 @@ import caiei_experience from "../text_blobs/caiei_experience";
 import csec_experience from "../text_blobs/csec_experience";
 import college_experience from "../text_blobs/college_experience";
 import ExperienceCard from "../components/ExperienceCard";
+import ExampleCard from "../components/experience/ExampleCard";
 
 
 
@@ -31,7 +32,7 @@ export default function Experience(){
                 </Grid>
                 <Grid item>
                     <ExperienceCard
-                    title={"Cybersecurity Research Assistant"}
+                    title={"Cybersecurity & AI Research Assistant"}
                     setting={"Rochester Institute of Technology Center for Cybersecurity"}
                     timeframe={"October 2019 - March 2020"}
                     keywords={["Cybersecurity", "Back End", "Tensorflow", "Python", "AI"]}
@@ -45,6 +46,7 @@ export default function Experience(){
                     timeframe={"2018 - 2020"}
                     keywords={['Computer Science', "AI", "Public Speaking", "Presentations"]}
                     description={"As the Publicist and Board Member of RIT's AI Club, I would make regular presentations to fellow students explaining complicated AI topics in a careful and simple way, to make AI more digestible for younger or less experienced students. Alongside the founding members, I aided in bringing the AI Club out of its infancy."}>                    
+                        <ExampleCard/>
                     </ExperienceCard>
                 </Grid>
                 <Grid item>
