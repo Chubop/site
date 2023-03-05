@@ -41,6 +41,7 @@ const darkTheme = createTheme({
   },
 });
 
+
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
@@ -51,6 +52,7 @@ function App() {
           <StarParallax/>
         </div>
         <div className="body">
+
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/experience" element={<Experience/>} />
