@@ -34,7 +34,9 @@ export default function Projects(props){
                         By pulling from the YouTube and Discord APIs, I am able to calculate 
                         the total member count of my community, which is currently
                         <span> </span>
-                        <span style={{fontFamily: 'Courier', color: 'red', backgroundColor: '#292929', padding: 2, paddingLeft: 12, paddingRight: 12, borderRadius: 4}}>9,013</span>
+                        <span style={{fontFamily: 'Courier', color: 'red', backgroundColor: '#292929', padding: 2, paddingLeft: 12, paddingRight: 12, borderRadius: 4}}>
+                            21,507
+                        </span>
                         .
                     </div>
                     </ProjectCard>
