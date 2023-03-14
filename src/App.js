@@ -29,6 +29,13 @@ const darkTheme = createTheme({
           paddingRight: '0 !important'
         }
       }
+    },
+    MuiGrid:{
+      styleOverrides:{
+        root:{
+          maxWidth: '100%',
+        }
+      }
     }
   },
   typography: {

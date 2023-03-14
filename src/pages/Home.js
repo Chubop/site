@@ -1,5 +1,5 @@
 import { Grid, Typography } from "@mui/material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Lottie from "react-lottie";
 import Content from "../components/Content";
 import {
@@ -9,9 +9,13 @@ import * as animationData from "../lotties/space_computer.json";
 import ImageCard from "../components/ImageCard";
 import { Link } from "react-router-dom";
 import StarParallax from "../components/StarParallax";
+import HackerText from "../components/HackerText";
+
 
 
 export default function Home(props){
+
+
 
     const funnyExpressions = ["Usually", "Most of The Time", "Barely", "Assuming Enough Coffee",
     "Except on Fridays", "Now With No Cheat Sheet"]
@@ -25,19 +29,24 @@ export default function Home(props){
         }
     };
 
-    const [currExp, setCurrExp] = useState(Math.floor(Math.random() * funnyExpressions.length)); 
+    const [currExp, setCurrExp] = useState(Math.floor(Math.random() * funnyExpressions.length));
+    const [hackerText, setHackerText] = useState()
     const [width, height] = useWindowSize();
+    let expression = funnyExpressions[currExp];
 
     return(
         <Content>
-            <Grid container justifyContent="space-evenly" alignItems="center" sx={{padding: 4}}>
-                <Grid item>
-                    <Typography variant={"h2"} sx={{fontWeight: 'bold', textAlign: width >= 600 ? 'left' : 'center'}}>
+            <Grid container justifyContent="space-evenly" alignItems="center">
+                <Grid item xs={6} sx={{flexBasis: '100%'}}>
+                    <Typography variant={width >= 600 ? "h2" : "h3"} sx={{fontWeight: 'bold', textAlign: width >= 1300 ? 'left' : 'center', marginLeft: 2}}>
                     Passing the Turing Test<br></br>
-                        <Typography variant="h2" 
-                        component={"span"} 
-                        sx={{color: 'gray'}}>
-                            {funnyExpressions[currExp]}
+                        <Typography 
+                        variant={width >= 600 ? "h2" : "h3"}
+                        sx={{height: 125}}
+                        >
+                            <HackerText>
+                                {expression}
+                            </HackerText>
                         </Typography>
                     </Typography>
                 </Grid>
@@ -50,7 +59,7 @@ export default function Home(props){
                 </Grid>
             </Grid>
 
-            <Grid container direction={width >= 900 ? 'row' : 'column'} justifyContent={"space-between"} alignItems={"center"} sx={{marginTop: 8}} >
+            <Grid container direction={width >= 900 ? 'row' : 'column'} justifyContent={"space-between"} alignItems={"center"}>
                 <Grid item xs={3} sx={{textAlign: 'center', margin: 'auto'}} component={"div"}>
                     <Link to="/experience" style={{ textDecoration: 'none' }}>
                         <ImageCard title={"Experience"} />
