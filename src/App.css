@@ -7,3 +7,22 @@
   filter: brightness(150%);
   transition: all 5 ease;
 }
+
+@keyframes background-pan {
+	from {
+		background-position: 0% center;
+	}
+
+	to {
+		background-position: -200% center;
+	}
+}
+
+.magic {
+  animation: background-pan 5s linear infinite;
+  font-weight: bold;
+  background: linear-gradient(to right, gray, silver, white, silver, gray);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

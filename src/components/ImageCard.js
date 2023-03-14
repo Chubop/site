@@ -42,7 +42,9 @@ export default function ImageCard(props){
                     transform: mouseEntered && 'scale(1.10)',
                     transition: mouseEntered && 'all 0.2s ease-in-out',
                     textShadow: '-1px -1px 3 gray'}}>
+                        <span className="magic">
                         {props.title}
+                        </span>
                     </Typography>
                 </CardContent>  
 
