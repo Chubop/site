@@ -40,7 +40,7 @@ const darkTheme = createTheme({
   },
   typography: {
     fontFamily: [
-      'colfax-web'
+      'Inter'
     ]
   },
   palette: {

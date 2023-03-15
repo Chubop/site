@@ -41,12 +41,13 @@ export default function Home(props){
                     <Typography variant={width >= 600 ? "h2" : "h3"} sx={{fontWeight: 'bold', textAlign: width >= 1300 ? 'left' : 'center', marginLeft: 2}}>
                     Passing the Turing Test<br></br>
                         <Typography 
-                        variant={width >= 600 ? "h2" : "h3"}
-                        sx={{height: 125}}
+                        variant={width >= 600 ? "h3" : "h4"}
+                        sx={{height: 125, fontFamily: 'monospace'}}
                         >
                             <HackerText>
                                 {expression}
                             </HackerText>
+                        
                         </Typography>
                     </Typography>
                 </Grid>
