@@ -17,8 +17,8 @@ export default function Home(props){
 
 
 
-    const funnyExpressions = ["Usually", "Most of The Time", "Barely", "Assuming Enough Coffee",
-    "Except on Fridays", "Now With No Cheat Sheet"]
+    const funnyExpressions = ["Usually", "Most of The Time", "Currently Looking For Work", "Assuming Enough Coffee",
+    "Except on Fridays", "Now With No Cheat Sheet", "With or Without AI"]
 
     const defaultOptions = {
         loop: true,
@@ -39,7 +39,7 @@ export default function Home(props){
             <Grid container justifyContent="space-evenly" alignItems="center">
                 <Grid item xs={6} sx={{flexBasis: '100%'}}>
                     <Typography variant={width >= 600 ? "h2" : "h3"} sx={{fontWeight: 'bold', textAlign: width >= 1300 ? 'left' : 'center', marginLeft: 2}}>
-                    Passing the Turing Test<br></br>
+                    Creative Technologist<br></br>
                         <Typography 
                         variant={width >= 600 ? "h3" : "h4"}
                         sx={{height: 125, fontFamily: 'monospace'}}
