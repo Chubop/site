@@ -17,7 +17,7 @@ export default function Home(props){
 
 
 
-    const funnyExpressions = ["Usually", "Most of The Time", "Currently Looking For Work", "Assuming Enough Coffee",
+    const funnyExpressions = ["Usually", "Most of The Time", "Assuming Enough Coffee",
     "Except on Fridays", "Now With No Cheat Sheet", "With or Without AI"]
 
     const defaultOptions = {
